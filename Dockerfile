@@ -29,6 +29,7 @@ RUN sudo apt-get install -y build-essential
 #  
 RUN sudo su && npm install -g colors mocha selenium-webdriver
 RUN sudo su && npm install colors mocha selenium-webdriver
+RUN sudo su && npm install dotenv
 RUN mkdir tests && mkdir screenshots
 
 
