@@ -27,12 +27,23 @@ RUN sudo apt-get install -y build-essential
 #  \__\___||___/\__|___/
 #                      
 #  
+RUN sudo su && npm install -g colors mocha selenium-webdriver
 RUN sudo su && npm install colors mocha selenium-webdriver
 RUN mkdir tests && mkdir screenshots
 
 
 
 
-VOLUME screenshots /home/seluser/screenshots_volume
-VOLUME videos /home/seluser/videos_volume
+#                   _       
+#                  | |      
+#  _ __   ___  _ __| |_ ___ 
+# | '_ \ / _ \| '__| __/ __|
+# | |_) | (_) | |  | |_\__ \
+# | .__/ \___/|_|   \__|___/
+# | |                       
+# |_|                       
+# 
+EXPOSE 24444
+EXPOSE 25900
+EXPOSE 26080
 
