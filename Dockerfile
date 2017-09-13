@@ -33,5 +33,6 @@ RUN mkdir tests && mkdir screenshots
 
 
 
-#VOLUME screenshots:screenshots
+VOLUME screenshots /home/seluser/screenshots_volume
+VOLUME videos /home/seluser/videos_volume
 
